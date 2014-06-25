@@ -1,0 +1,10 @@
+.openerp a.link_view_sdk{
+    margin: 4px;
+    padding:6px;
+    padding-top:4px;
+    border-radius: 3px;
+    text-align: center;
+    vertical-align: -50%;
+    background-color:#BB2929;
+    text-shadow: 1px 1px  #FFF;
+}

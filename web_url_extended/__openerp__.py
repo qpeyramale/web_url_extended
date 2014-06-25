@@ -16,6 +16,9 @@
     "js": [
         "static/src/js/view_list.js",
     ],
+    'css': [
+        'static/src/css/view_list.css',
+    ],
     "images": ['images/web_url.png'],
     "auto_install": False,
 }

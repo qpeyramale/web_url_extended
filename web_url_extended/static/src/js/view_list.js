@@ -17,7 +17,7 @@ instance.web.ListView.List = instance.web.ListView.List.extend({
             //alert(self.columns[i].name);
 		if(self.columns[i].widget === 'url') {
                 	var $cell = $row.find((_.str.sprintf('[data-field=%s]', self.columns[i].id)));
-                	$cell.html(_.template('<a class="oe_form_uri" href="<%-text%>" target="blank" data-model="<%-model%>" data-id="<%-id%>"><%-mytxt%></a>', 	{
+                	$cell.html(_.template('<a class="oe_form_uri link_view_sdk" href="<%-text%>" target="blank" data-model="<%-model%>" data-id="<%-id%>"><%-mytxt%></a>', 	{
                         text: instance.web.format_value(record.get(self.columns[i].id), self.columns[i], ''),
                         model: self.columns[i].relation,
                         id: record.get(self.columns[i].id)[0],
@@ -44,7 +44,7 @@ instance.web.form.One2ManyList = instance.web.form.One2ManyList.extend({
             for(var i=0, length=self.columns.length; i<length; ++i) {
                 if(self.columns[i].widget === 'url') {
                 	var $cell = $row.find((_.str.sprintf('[data-field=%s]', self.columns[i].id)));
-                	$cell.html(_.template('<a class="oe_form_uri" href="<%-text%>" target="blank" data-model="<%-model%>" data-id="<%-id%>"><%-mytxt%></a>', {
+                	$cell.html(_.template('<a class="oe_form_uri link_view_sdk" href="<%-text%>" target="blank" data-model="<%-model%>" data-id="<%-id%>"><%-mytxt%></a>', {
                         text: instance.web.format_value(record.get(self.columns[i].id), self.columns[i], ''),
                         model: self.columns[i].relation,
                         id: record.get(self.columns[i].id)[0],
